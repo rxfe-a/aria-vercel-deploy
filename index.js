@@ -18,7 +18,7 @@ const headers = {
 var unblocker = new Unblocker({prefix: '/sussyuncle/'});
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static("./public"));
+app.use(express.static("/public/"));
 const __dirname = process.cwd();
 const server = createServer();
 app.use(unblocker);
